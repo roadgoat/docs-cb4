@@ -100,14 +100,14 @@ Size      Items          Name
       <codeblock>$ cbbackupmgr config --archive /data/backups --repo example 
  
 $ cbbackupmgr backup --archive /data/backups --repo example \ 
---host 172.23.10.5 --username Administrator --password password 
+--cluster 172.23.10.5 --username Administrator --password password 
  
 Error backing up cluster: Not all data was backed up due to connectivity 
 issues. Check to make sure there were no server side failures during 
 backup. See backup logs for more details on what wasn't backed up. 
  
 $ cbbackupmgr backup --archive /data/backups --repo example \ 
---host 172.23.10.5 --username Administrator --password password 
+--cluster 172.23.10.5 --username Administrator --password password 
  
 Error backing up cluster: Partial backup error 2016-02-11T17:00:19.594970735-08:00 
  
@@ -119,7 +119,7 @@ Backup successfully completed </codeblock>
       <codeblock>$ cbbackupmgr config --archive /data/backups --repo example 
  
 $ cbbackupmgr backup --archive /data/backups --repo example \ 
---host 172.23.10.5 --username Administrator --password password --thread 16 </codeblock>
+--cluster 172.23.10.5 --username Administrator --password password --thread 16 </codeblock>
     </section>
     <section>
       <title>Discussion</title>
